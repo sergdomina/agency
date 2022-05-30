@@ -1,48 +1,29 @@
 {
-  "name": "core-js",
-  "description": "Standard library",
-  "version": "3.0.0",
+  "name": "parcel-project-template",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://sergdomina.github.io/agency",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /agency/"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zloirock/core-js.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
-  "main": "index.js",
-  "license": "MIT",
-  "keywords": [
-    "ES3",
-    "ES5",
-    "ES6",
-    "ES7",
-    "ES2015",
-    "ES2016",
-    "ES2017",
-    "ES2018",
-    "ES2019",
-    "ECMAScript 3",
-    "ECMAScript 5",
-    "ECMAScript 6",
-    "ECMAScript 7",
-    "ECMAScript 2015",
-    "ECMAScript 2016",
-    "ECMAScript 2017",
-    "ECMAScript 2018",
-    "ECMAScript 2019",
-    "Harmony",
-    "Strawman",
-    "Map",
-    "Set",
-    "WeakMap",
-    "WeakSet",
-    "Promise",
-    "Observable",
-    "Symbol",
-    "TypedArray",
-    "URL",
-    "URLSearchParams",
-    "queueMicrotask",
-    "setImmediate",
-    "polyfill",
-    "ponyfill",
-    "shim"
-  ]
+  "keywords": [],
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  },
+  "dependencies": {}
 }
