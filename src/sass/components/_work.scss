@@ -1,8 +1,15 @@
 .item{
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    &:nth-child(2n+1) {
+      flex-direction: row-reverse;
+    }
+    margin-bottom: 120px;
 }
 .work-title{
-    margin-top: 182px;
+    margin-bottom: 182px;
     margin-left: 224px;
     font-style: normal;
 font-weight: 700;
@@ -21,16 +28,14 @@ color: var(--exp);
 margin-bottom: 26px;
 }
 .block-text{
-    margin-left: 224px;
-    margin-top: 211px;
-    margin-bottom: 140px;
+
     width: 390px;
 }
 
 .block-img{
-    margin-top: 211px;
-    margin-bottom: 140px;
+    position: relative;
     width:  677px;
+    height: 550px;
     
 }
 .name-project{
@@ -76,32 +81,44 @@ color:var(--exp);
 //. JobGet .//
 
 .video_call{
-    position: relative;
+    position: absolute;
     margin-left: 21px;
     margin-top: 61px;
     z-index: 1;
 }
 .desktop{
-    position: relative;
-    left: 56px;
-    top:  0 px;
+    position: absolute;
+    margin-left: 56px;
+    margin-top:   0px;
     z-index: 0;
 }
 .calendar_paint{
-    position: relative;
+    position: absolute;
     left: 547px;
-    top: 167 px;
-    z-index: 2;
+    top: 167px;
+    z-index: 1;
 }
 .mobile_one{
-    position: relative;
-    left: 0 px;
-    top: 190 px;
-    z-index: 3;
+    position: absolute;
+    left: 0px;
+    top: 190px;
+    z-index: 1;
 }
 .mobile_two{
-    position: relative;
+    position: absolute;
     left: 158px;
-    top: 242 px;
-    z-index: 2;
+    top: 242px;
+    z-index: 1;
+}
+.calendar{
+    position: absolute;
+    left: 275px;
+    top: 338px;
+    z-index: 1;
+}
+.text{
+    position: absolute;
+    left: 323px;
+    top: 338px;
+    z-index: 1;
 }
