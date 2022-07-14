@@ -1,3 +1,6 @@
+.item{
+    display: flex;
+}
 .work-title{
     margin-top: 182px;
     margin-left: 224px;
@@ -21,6 +24,14 @@ margin-bottom: 26px;
     margin-left: 224px;
     margin-top: 211px;
     margin-bottom: 140px;
+    width: 390px;
+}
+
+.block-img{
+    margin-top: 211px;
+    margin-bottom: 140px;
+    width:  677px;
+    
 }
 .name-project{
     font-style: normal;
@@ -62,3 +73,35 @@ color:var(--exp);
     transform: scale(1);
 }
 
+//. JobGet .//
+
+.video_call{
+    position: relative;
+    margin-left: 21px;
+    margin-top: 61px;
+    z-index: 1;
+}
+.desktop{
+    position: relative;
+    left: 56px;
+    top:  0 px;
+    z-index: 0;
+}
+.calendar_paint{
+    position: relative;
+    left: 547px;
+    top: 167 px;
+    z-index: 2;
+}
+.mobile_one{
+    position: relative;
+    left: 0 px;
+    top: 190 px;
+    z-index: 3;
+}
+.mobile_two{
+    position: relative;
+    left: 158px;
+    top: 242 px;
+    z-index: 3;
+}
