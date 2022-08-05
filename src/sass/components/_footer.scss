@@ -1,6 +1,7 @@
 .footer{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer_bg{
     background-color: var(--body-bg);
@@ -30,15 +31,19 @@ text-align: right;
 color: var(--most-light);
 }
 
-.tap{
+.go{
 font-family: 'Avenir';
 font-style: normal;
 font-weight: 800;
 font-size: 16px;
 line-height: 22px;
 text-align: center;
-
 color: var(--body-bg);
+padding: 45px 10px;
+
+}
+.tap{
+
 width: 112px;
 height: 112px;
 border-radius: 50%;
