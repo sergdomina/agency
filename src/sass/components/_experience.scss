@@ -4,6 +4,15 @@
     line-height: 1.36;
     color: var(--exp);
 }
+.discription__container{
+    width: 934px;
+    overflow: hidden;
+    padding-top: 120px;
+    padding-bottom: 28px;
+    background-color: var(--bg);
+    text-align: right;
+}
+
 .exp-ul{
     margin-left: 204px;
 }
@@ -35,7 +44,7 @@ padding-bottom: 116px;
 }
 .fixed{
     position: sticky;
-
+    float: left;
     top: 30%;
 
     bottom: 30%;
