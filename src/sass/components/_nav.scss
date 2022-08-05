@@ -1,9 +1,11 @@
 .nav{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     width: 233px;
 left: 0px;
 top: 253px;
+border-top-right-radius: 50px;
+border-bottom-right-radius: 50px;
 padding: 46px 0 39px;
 
 background: var(--fill-nav);
@@ -21,7 +23,7 @@ backdrop-filter: blur(16px);
 padding: 5px 74px 4px 70px;
 border-radius: 0px 15px 15px 0;
 &:hover,&:focus{
-    background-color: var(--yellow);
+    background-color: var(--most-light);
     color: var(--fill-back);
 }
 }
