@@ -8,8 +8,8 @@ border-top-right-radius: 50px;
 border-bottom-right-radius: 50px;
 padding: 46px 0 39px;
 
-background: var(--fill-nav);
-backdrop-filter: blur(16px);
+background: rgba(54, 54, 54, 0.3);
+backdrop-filter: blur(8px);
 
 }
 .nav__link{
