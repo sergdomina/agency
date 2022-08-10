@@ -2,6 +2,7 @@
     @media screen and (max-width: 576px){
         display: block;
         flex-direction: column;
+        margin-bottom: 60px;
     }
     @media screen and (min-width: 577px){
     display: flex;
@@ -40,71 +41,96 @@ color: var(--yellow);
 
 .content{
     @media screen and (max-width: 576px){
-        
+        max-width: 307px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.2;
+        color: var(--exp);
+        margin-bottom: 26px;
     }
     @media screen and (min-width: 577px){
-       
+        max-width: 307px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.2;
+        color: var(--exp);
+        margin-bottom: 26px;
     }
-    max-width: 307px;
-
-    font-style: normal;
-font-weight: 300;
-font-size: 14px;
-line-height: 19px;
-color: var(--exp);
-margin-bottom: 26px;
+    
 }
 .block-text{
     @media screen and (max-width: 576px){
-        
+        margin-left: 10%;
+        width: 390px;
     }
     @media screen and (min-width: 577px){
-       
+        width: 390px;
     }
-    width: 390px;
+    
 }
 
 .block-img{
     @media screen and (max-width: 576px){
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width:  345px;
+        height: 281px;
         
     }
     @media screen and (min-width: 577px){
-       
-    }
-    position: relative;
-    width:  677px;
-    height: 550px;
-    
+        position: relative;
+        width:  677px;
+        height: 550px;
+    }    
 }
+
+
 .name-project{
     @media screen and (max-width: 576px){
-        
+        font-size: 12px;
     }
     @media screen and (min-width: 577px){
-       
+        font-size: 20px;
     }
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 19px;
+    line-height: 1.4;
     color: var(--jobget-blue);
     margin-bottom: 13px;
 }
 .desc-work{
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 49px;
-color: var(--exp);
-margin-bottom: 26px;
+    @media screen and (max-width: 576px){
+        font-size: 21px;
+    }
+    @media screen and (min-width: 577px){
+        font-size: 30px;
+    }
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.6;
+    color: var(--exp);
+    margin-bottom: 26px;
 }
+
+
 .view{
+    @media screen and (max-width: 576px){
+        font-size: 12px;
+    }
+    @media screen and (min-width: 577px){
+        font-size: 16px;
+    }
     position: relative;
     font-weight: 700;
-font-size: 16px;
-line-height: 22px;
-color:var(--exp);
+    line-height: 22px;
+    color:var(--exp);
 }
+
+
 .view::after{
     position: absolute;
     display: block;
@@ -125,46 +151,118 @@ color:var(--exp);
 //. JobGet .//
 
 .video_call{
-    position: absolute;
-    margin-left: 21px;
-    margin-top: 61px;
-    z-index: 1;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 41px;
+        top: 41px;
+        z-index: 1; 
+        transform: scale(0.6);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        margin-left: 21px;
+        margin-top: 61px;
+        z-index: 1; 
+    }   
 }
+
 .desktop{
-    position: absolute;
-    margin-left: 56px;
-    margin-top:   0px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left:  0px;
+        top:   0px;
+        z-index: 0;
+        transform: scale(0.6);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 56px;
+    top:   0px;
     z-index: 0;
+    }   
 }
+
+
 .calendar_paint{
-    position: absolute;
-    left: 547px;
-    top: 167px;
-    z-index: 1;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 240px;
+        top: 85px;
+        z-index: 1;
+        transform: scale(0.6);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 547px;
+        top: 167px;
+        z-index: 1;
+    } 
 }
+
 .mobile_one{
-    position: absolute;
-    left: 0px;
-    top: 190px;
-    z-index: 1;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 0px;
+        top: 30px;
+        z-index: 1; 
+        transform: scale(0.4);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 0px;
+        top: 90px;
+        z-index: 1; 
+    } 
+    
 }
 .mobile_two{
-    position: absolute;
-    left: 158px;
-    top: 242px;
-    z-index: 1;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 65px;
+        top: 50px;
+        z-index: 1;
+        transform: scale(0.4);
+    }
+    @media screen and (min-width: 577px){ 
+        position: absolute;
+        left: 160px;
+        top: 240px;
+        z-index: 1;   
+    }   
 }
+
+
 .calendar{
-    position: absolute;
-    left: 275px;
-    top: 338px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 140px;
+    top: 170px;
     z-index: 1;
+    transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 275px;
+        top: 338px;
+        z-index: 1; 
+    } 
+    
 }
 .text{
-    position: absolute;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 100px;
+    top: 165px;
+    z-index: 1; 
+    transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+       position: absolute;
     left: 323px;
     top: 338px;
-    z-index: 1;
+    z-index: 1; 
+    } 
+    
 }
 
 //.Aroma.//

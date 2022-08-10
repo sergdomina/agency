@@ -39,14 +39,23 @@
     }   
 }
 .exp-li{
-    &:not(:last-child){
-        margin-bottom: 45px;
+    @media screen and (max-width: 576px){
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
     }
+    @media screen and (min-width: 577px){
+        &:not(:last-child){
+            margin-bottom: 45px;
+        }
+    } 
 }
+
+
 .exp-title{
     @media screen and (max-width: 576px){
         margin-left: -115px;
-        margin-top: 220px;
+        margin-top: 150px;
     position: absolute;
     font-weight: 700;
     font-size: 25px;
