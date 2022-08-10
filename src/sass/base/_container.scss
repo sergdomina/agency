@@ -1,9 +1,25 @@
 .container--right{
-    width: 934px;
+
+    
+
+    @media screen and (max-width: 576px){
+        width: auto;
+        margin: 0 auto;
+    }
+    @media screen and (min-width: 577px){
+        max-width: 934px;
     margin-left: auto;
+    }
 }
 .container{
-    width: 1440px;
-    margin: 0 auto;
+    @media screen and (max-width: 576px){
+        width: auto;
+    margin-left: auto;
+    }
+    @media screen and (min-width: 577px){
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    
     // position: relative;
 }

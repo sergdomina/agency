@@ -1,4 +1,22 @@
 .hero__title{
+    @media screen and (max-width: 576px){
+        width: 292px;
+        margin: 0 auto;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.5;
+        color: var(--rasp);
+    }
+    @media screen and (min-width: 577px){
+        width: 826px;
+
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 1.5;
+        color: var(--rasp);
+    }  
 width: 826px;
 
 font-family: Poppins;
@@ -8,15 +26,22 @@ line-height: 1.5;
 color: var(--rasp);
 }
 .hero__container{
-    padding-bottom: 224px;
-    padding-top: 71px;
+    @media screen and (max-width: 576px){
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    @media screen and (min-width: 577px){
+        padding-bottom: 224px;
+        padding-top: 71px;
+    }  
+    
 }
 
 
 .hero__description{
     white-space: nowrap;
 font-weight: 700;
-font-size: 45px;
+font-size: calc(30px+(45-30)*((100vw-320px)/(1440-320)));
 line-height: 1.36;
 &:not(:last-child){
     margin-right: 20px;
