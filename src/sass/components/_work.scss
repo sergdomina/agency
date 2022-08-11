@@ -215,6 +215,7 @@ color: var(--yellow);
     } 
     
 }
+
 .mobile_two{
     @media screen and (max-width: 576px){
         position: absolute;
@@ -248,6 +249,7 @@ color: var(--yellow);
     } 
     
 }
+
 .text{
     @media screen and (max-width: 576px){
         position: absolute;
@@ -268,149 +270,370 @@ color: var(--yellow);
 //.Aroma.//
 
 .approw{
-    position: absolute;
-    margin-left: 124px;
-    margin-top: 80px;
-    z-index: 1;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 16px;
+        top: 53px;
+        z-index: 1;
+        transform: scale(0.55);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 124px;
+        top: 80px;
+        z-index: 1;
+    } 
 }
+
+
 .aroma_mobile{
-    position: absolute;
-    margin-left: 163px;
-    margin-top: 15px;
-    z-index: 0;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 65px;
+        top: -47px;
+        z-index: 0;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 163px;
+        top: 15px;
+        z-index: 0;
+    } 
+    
 }
 .aroma_mobile_two{
-    position: absolute;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 161px;
+    top: 32px;
+    z-index: 0;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
     margin-left: 343px;
     margin-top: 175px;
     z-index: 0;
+    } 
+    
 }
 .recipe{
-    position: absolute;
-    margin-left: 220px;
-    margin-top: 368px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 119px;
+    top: 194px;
     z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 220px;
+    top: 368px;
+    z-index: 1;
+    } 
 }
 
 //. Airlog .//
 
 .desktop_airlog{
-    position: absolute;
-    margin-left: 60px;
-    margin-top: 47px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 14px;
+    top: -19px;
     z-index: 0;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 60px;
+        top: 47px;
+        z-index: 0; 
+    } 
+    
 }
+
 .mobile_airlog{
-    position: absolute;
-    margin-left: 446px;
-    margin-top: 178px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 191px;
+    top: -8px;
     z-index: 1;
+        transform: scale(0.4);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 446px;
+    top: 178px;
+    z-index: 1;
+    }    
 }
+
 .tab_airlog{
-    position: absolute;
-    margin-left: 23px;
-    margin-top: 315px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: -28px;
+    top: 142px;
     z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 23px;
+        top: 315px;
+        z-index: 1; 
+    }  
 }
+
 .popup_airlog{
-    position: absolute;
-    margin-left: 426px;
-    margin-top: 103px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 209px;
+    top: 55px;
     z-index: 1;
+        transform: scale(0.45);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 426px;
+    top: 103px;
+    z-index: 1;
+    } 
 }
+
 .cloud_airlog{
-    position: absolute;
-    margin-left: 16px;
-    margin-top: 295px;
-    z-index: 1;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 65px;
+        top: 141px;
+        z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 16px;
+        top: 295px;
+        z-index: 1;
+    } 
 }
+
 .cloud_twoi_airlog{
-    position: absolute;
-    margin-left: 386px;
-    margin-top: 457px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 191px;
+    top: 203px;
     z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 386px;
+    top: 457px;
+    z-index: 1;
+    }   
 }
 
 //. Membersy .//
 
 .desktop_membersy{
+    @media screen and (max-width: 576px){
+        left: 7px;
+        top: -6px;
+        z-index: 1;
+        transform: scale(0.6);
+    }
+    @media screen and (min-width: 577px){
+        left: 44px;
+        top: 106px;
+        z-index: 1;
+    } 
     position: absolute;
-    margin-left: 44px;
-    margin-top: 106px;
-    z-index: 1;
+    
 }
+
 .popup_membersy{
-    position: absolute;
-    margin-left: 495px;
-    margin-top: 262px;
+    @media screen and (max-width: 576px){
+        left: 217px;
+    top: 55px;
     z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        left: 495px;
+    top: 262px;
+    z-index: 1;
+    } 
+    position: absolute;
+    
 }
+
 .bg_big_membersy{
-    position: absolute;
-    margin-left: 13px;
-    margin-top: 60px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: -30px;
+    top: -70px;
     z-index: 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 13px;
+    top: 60px;
+    z-index: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    } 
+    
 }
+
 .bg_small_membersy{
-    position: absolute;
-    margin-left: 520px;
-    margin-top: 430px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 249px;
+    top: 157px;
     z-index: 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 520px;
+    top: 430px;
+    z-index: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    } 
 }
 
 //. Chronik .//
 .desktop_chronik{
-    position: absolute;
-    margin-left: 82px;
-    margin-top: 60px;
-    z-index: 0;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: -2px;
+        top: -32px;
+        z-index: 0;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 82px;
+        top: 60px;
+        z-index: 0;
+    } 
 }
+
 .tab_chronik{
-    position: absolute;
-    margin-left: 38px;
-    margin-top: 265px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: -50px;
+    top: 65px;
     z-index: 1;
+        transform: scale(0.45);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 38px;
+        top: 265px;
+        z-index: 1; 
+    } 
+    
 }
+
 .anketa_chronik{
-    position: absolute;
-    margin-left: 401px;
-    margin-top: 172px;
-    z-index: 0;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 163px;
+        top: 3px;
+        z-index: 0;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 401px;
+        top: 172px;
+        z-index: 0;
+    } 
 }
+
 .date_chronik{
-    position: absolute;
-    margin-left: 11px;
-    margin-top: 345px;
-    z-index: 0;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: -55px;
+        top: 124px;
+        z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 11px;
+        top: 345px;
+        z-index: 0;
+    } 
 }
 
 //. Wine .//
 
 .mobile_wine{
-    position: absolute;
-    margin-left: 95px;
-    margin-top: 22px;
-    z-index: 0;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 18px;
+        top: -93px;
+        z-index: 0;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 95px;
+        top: 22px;
+        z-index: 0;
+    } 
 }
+
 .mobile_two_wine{
-    position: absolute;
-    margin-left: 326px;
-    margin-top: 85px;
-    z-index: 0;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 133px;
+        top: -69px;
+        z-index: 0;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 326px;
+        top: 85px;
+        z-index: 0;
+    } 
 }
+
 .popup_wine{
-    position: absolute;
-    margin-left: 220px;
-    margin-top: 405px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 73px;
+    top: 156px;
     z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 220px;
+        top: 405px;
+        z-index: 1; 
+    } 
 }
+
 .glase_wine{
-    position: absolute;
-    margin-left: 495px;
-    margin-top: 143px;
-    z-index: 1;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 260px;
+        top: 67px;
+        z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 495px;
+        top: 143px;
+        z-index: 1;
+    } 
 }
 
 
@@ -418,22 +641,51 @@ color: var(--yellow);
 //. Social .//
 
 .top_social{
-    position: absolute;
-    margin-left: 181px;
-    margin-top: 362px;
-    z-index: 2;
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 10px;
+        top: 80px;
+        z-index: 2;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 181px;
+        top: 362px;
+        z-index: 2;
+    }
 }
 
 .username_social{
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 82px;
+    top: 57px;
+    z-index: 1;
+        transform: scale(0.5);
+    }
+    @media screen and (min-width: 577px){
+        
+    } 
     position: absolute;
-    margin-left: 372px;
-    margin-top: 312px;
+    left: 372px;
+    top: 312px;
     z-index: 1;
 }
 
 .desktop_social{
-    position: absolute;
-    margin-left: 38px;
-    margin-top: 58px;
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: -5px;
+    top: -19px;
     z-index: 0;
+        transform: scale(0.6);
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 38px;
+        top: 58px;
+        z-index: 0; 
+    } 
+    
 }
