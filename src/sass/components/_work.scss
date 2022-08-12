@@ -153,10 +153,10 @@ color: var(--yellow);
 .video_call{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 41px;
-        top: 41px;
+        left: 42px;
+        top: 42px;
         z-index: 1; 
-        transform: scale(0.6);
+        width: 23px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -169,10 +169,11 @@ color: var(--yellow);
 .desktop{
     @media screen and (max-width: 576px){
         position: absolute;
-        left:  0px;
-        top:   0px;
+        left:  57px;
+        top:  19px;
         z-index: 0;
-        transform: scale(0.6);
+        width: 240px;
+        
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -186,10 +187,10 @@ color: var(--yellow);
 .calendar_paint{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 240px;
-        top: 85px;
+        left: 281px;
+        top: 93px;
+        width: 29px;
         z-index: 1;
-        transform: scale(0.6);
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -202,10 +203,11 @@ color: var(--yellow);
 .mobile_one{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 0px;
-        top: 30px;
+        left: 32px;
+        top: 103px;
         z-index: 1; 
-        transform: scale(0.4);
+        width: 66px;
+
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -219,10 +221,10 @@ color: var(--yellow);
 .mobile_two{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 65px;
-        top: 50px;
+        left: 105px;
+        top: 122px;
         z-index: 1;
-        transform: scale(0.4);
+        width: 66px;
     }
     @media screen and (min-width: 577px){ 
         position: absolute;
@@ -236,10 +238,10 @@ color: var(--yellow);
 .calendar{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 140px;
-    top: 170px;
+    left: 161px;
+    top: 167px;
     z-index: 1;
-    transform: scale(0.5);
+    width: 16px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -252,11 +254,11 @@ color: var(--yellow);
 
 .text{
     @media screen and (max-width: 576px){
-        position: absolute;
-    left: 100px;
-    top: 165px;
+    position: absolute;
+    left: 178px;
+    top: 167px;
     z-index: 1; 
-    transform: scale(0.5);
+    width: 109px;
     }
     @media screen and (min-width: 577px){
        position: absolute;
@@ -272,10 +274,10 @@ color: var(--yellow);
 .approw{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 16px;
-        top: 53px;
+        left: 82px;
+        top: 56px;
         z-index: 1;
-        transform: scale(0.55);
+        width: 140px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -289,10 +291,10 @@ color: var(--yellow);
 .aroma_mobile{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 65px;
-        top: -47px;
+        left: 100px;
+        top: 17px;
         z-index: 0;
-        transform: scale(0.5);
+        width: 77px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -300,15 +302,17 @@ color: var(--yellow);
         top: 15px;
         z-index: 0;
     } 
+    filter: drop-shadow(0px 4px 10px rgba(18, 169, 251, 0.546));
     
 }
 .aroma_mobile_two{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 161px;
-    top: 32px;
+    left: 185px;
+    top: 96px;
     z-index: 0;
-        transform: scale(0.5);
+    width: 77px;
+    
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -316,15 +320,15 @@ color: var(--yellow);
     margin-top: 175px;
     z-index: 0;
     } 
-    
+    filter: drop-shadow(0px 4px 10px rgba(18, 169, 251, 0.546));
 }
 .recipe{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 119px;
-    top: 194px;
+    left: 126px;
+    top: 190px;
     z-index: 1;
-        transform: scale(0.5);
+    width: 67px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -339,10 +343,10 @@ color: var(--yellow);
 .desktop_airlog{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 14px;
-    top: -19px;
+    left: 40px;
+    top: 19px;
     z-index: 0;
-        transform: scale(0.5);
+    width: 235px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -356,10 +360,10 @@ color: var(--yellow);
 .mobile_airlog{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 191px;
-    top: -8px;
+    left: 244px;
+    top: 86px;
     z-index: 1;
-        transform: scale(0.4);
+    width: 83px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -372,10 +376,10 @@ color: var(--yellow);
 .tab_airlog{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: -28px;
-    top: 142px;
+    left: 21px;
+    top: 165px;
     z-index: 1;
-        transform: scale(0.5);
+    width: 202px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -388,10 +392,10 @@ color: var(--yellow);
 .popup_airlog{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 209px;
-    top: 55px;
+    left: 229px;
+    top: 52px;
     z-index: 1;
-        transform: scale(0.45);
+    width: 55px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -404,10 +408,10 @@ color: var(--yellow);
 .cloud_airlog{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 65px;
-        top: 141px;
+        left: 18px;
+        top: 147px;
         z-index: 1;
-        transform: scale(0.5);
+        width: 30px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -417,13 +421,13 @@ color: var(--yellow);
     } 
 }
 
-.cloud_twoi_airlog{
+.cloud_two_airlog{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 191px;
-    top: 203px;
+    left: 220px;
+    top: 217px;
     z-index: 1;
-        transform: scale(0.5);
+    width: 34px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -437,10 +441,10 @@ color: var(--yellow);
 
 .desktop_membersy{
     @media screen and (max-width: 576px){
-        left: 7px;
-        top: -6px;
+        left: 44px;
+        top: 60px;
         z-index: 1;
-        transform: scale(0.6);
+        width: 236px;
     }
     @media screen and (min-width: 577px){
         left: 44px;
@@ -453,10 +457,10 @@ color: var(--yellow);
 
 .popup_membersy{
     @media screen and (max-width: 576px){
-        left: 217px;
-    top: 55px;
+        left: 253px;
+    top: 127px;
     z-index: 1;
-        transform: scale(0.5);
+    width: 55px;
     }
     @media screen and (min-width: 577px){
         left: 495px;
@@ -470,11 +474,11 @@ color: var(--yellow);
 .bg_big_membersy{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: -30px;
-    top: -70px;
+    left: 35px;
+    top: 43px;
     z-index: 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-        transform: scale(0.5);
+    width: 165px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -489,11 +493,11 @@ color: var(--yellow);
 .bg_small_membersy{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 249px;
-    top: 157px;
+    left: 261px;
+    top: 205px;
     z-index: 0;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-        transform: scale(0.5);
+    width: 31px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -504,14 +508,17 @@ color: var(--yellow);
     } 
 }
 
+
 //. Chronik .//
+
+
 .desktop_chronik{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: -2px;
-        top: -32px;
+        left: 75px;
+        top: 41px;
         z-index: 0;
-        transform: scale(0.5);
+        width: 196px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -524,10 +531,10 @@ color: var(--yellow);
 .tab_chronik{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: -50px;
-    top: 65px;
+    left: 53px;
+    top: 142px;
     z-index: 1;
-        transform: scale(0.45);
+    width: 154px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -541,10 +548,10 @@ color: var(--yellow);
 .anketa_chronik{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 163px;
-        top: 3px;
+        left: 226px;
+        top: 89px;
         z-index: 0;
-        transform: scale(0.5);
+        width: 90px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -557,10 +564,10 @@ color: var(--yellow);
 .date_chronik{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: -55px;
-        top: 124px;
+        left: 28px;
+        top: 173px;
         z-index: 1;
-        transform: scale(0.5);
+        width: 123px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -575,10 +582,10 @@ color: var(--yellow);
 .mobile_wine{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 18px;
-        top: -93px;
+        left: 65px;
+        top: 19px;
         z-index: 0;
-        transform: scale(0.5);
+        width: 95px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -591,10 +598,10 @@ color: var(--yellow);
 .mobile_two_wine{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 133px;
-        top: -69px;
+        left: 170px;
+        top: 57px;
         z-index: 0;
-        transform: scale(0.5);
+        width: 95px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -607,10 +614,10 @@ color: var(--yellow);
 .popup_wine{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 73px;
-    top: 156px;
+    left: 123px;
+    top: 201px;
     z-index: 1;
-        transform: scale(0.5);
+    width: 111px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -623,10 +630,10 @@ color: var(--yellow);
 .glase_wine{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 260px;
-        top: 67px;
+        left: 248px;
+        top: 79px;
         z-index: 1;
-        transform: scale(0.5);
+        width: 31px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -643,10 +650,10 @@ color: var(--yellow);
 .top_social{
     @media screen and (max-width: 576px){
         position: absolute;
-        left: 10px;
-        top: 80px;
+        left: 105px;
+        top: 160px;
         z-index: 2;
-        transform: scale(0.5);
+        width: 110px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
@@ -659,10 +666,10 @@ color: var(--yellow);
 .username_social{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: 82px;
-    top: 57px;
+    left: 206px;
+    top: 145px;
     z-index: 1;
-        transform: scale(0.5);
+    width: 120px;
     }
     @media screen and (min-width: 577px){
         
@@ -676,10 +683,10 @@ color: var(--yellow);
 .desktop_social{
     @media screen and (max-width: 576px){
         position: absolute;
-    left: -5px;
-    top: -19px;
+    left: 52px;
+    top: 25px;
     z-index: 0;
-        transform: scale(0.6);
+    width: 220px;
     }
     @media screen and (min-width: 577px){
         position: absolute;
