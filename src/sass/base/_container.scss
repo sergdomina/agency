@@ -1,14 +1,19 @@
 .container--right{
-
-    
-
-    @media screen and (max-width: 576px){
+  @include mq(mobile){
         width: auto;
         margin: 0 auto;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        max-width: 333px;
+      margin-left: auto;
+    }
+    @include mq(default){
+        max-width: 623px;
+      margin-left: auto;
+    }
+    @include mq(desktop){
         max-width: 934px;
-    margin-left: auto;
+      margin-left: auto;
     }
 }
 .container{

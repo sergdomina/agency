@@ -1,10 +1,10 @@
 .item{
-    @media screen and (min-width: 375px) and (max-width: 627px) {
+    @include mq(mobile){
         display: block;
         flex-direction: column;
         margin-bottom: 60px;
     }
-    @media screen and (min-width: 628px) and (max-width: 959px){
+    @include mq(tablet){
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,7 +14,7 @@
     }
     margin-bottom: 90px;
     }
-    @media screen and (min-width: 960px) and (max-width: 1439px){
+    @include mq(default){
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,7 +24,7 @@
     }
     margin-bottom: 100px;
     }
-    @media screen and (min-width: 1440px){
+    @include mq(desktop){
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,8 +35,53 @@
     margin-bottom: 120px;
     }
 }
+
+.block-text{
+    @include mq(mobile){
+        margin: 0 auto;
+        width: 340px;
+    }
+    @include mq(tablet){
+        width: 340px;
+    }
+    @include mq(default){
+        width: 370px;
+    }
+    @include mq(desktop){
+        width: 390px;
+    }
+}
+
+.block-img{
+    display: block;
+    @include mq(mobile){
+        
+        margin: 0 auto;
+        position: relative;
+        width:  345px;
+        height: 281px;
+        
+    }
+    @include mq(tablet) {
+        position: relative;
+        width:  345px;
+        height: 281px;
+    }    
+    @include mq(default){
+        position: relative;
+        width:  470px;
+        height: 470px;
+    }    
+    @include mq(desktop) {
+        position: relative;
+        width:  677px;
+        height: 550px;
+    }    
+}
+
+
 .work-title{
-    @media screen and (min-width: 375px) and (max-width: 627px)  {
+    @include mq(mobile)  {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -46,7 +91,7 @@
     line-height: 1.3;
     color: var(--yellow);
     }
-    @media screen and (min-width: 628px) and (max-width: 959px){
+    @include mq(tablet) {
         text-align: center;
         margin-top: 30px;
     margin-bottom: 30px;
@@ -56,7 +101,7 @@
     line-height: 1.3;
     color: var(--yellow);
     }
-    @media screen and (min-width: 960px) and (max-width: 1439px){
+    @include mq(default){
         text-align: center;
         margin-top: 30px;
     margin-bottom: 30px;
@@ -66,7 +111,7 @@
     line-height: 1.3;
     color: var(--yellow);
     }
-    @media screen and (min-width: 1440px){
+    @include mq(desktop) {
         margin-top: 182px;
         margin-bottom: 182px;
         margin-left: 224px;
@@ -80,7 +125,7 @@
 
 
 .content{
-    @media screen and (min-width: 375px) and (max-width: 627px) {
+    @include mq(mobile) {
         
         font-style: normal;
         font-weight: 300;
@@ -89,7 +134,7 @@
         color: var(--exp);
         margin-bottom: 26px;
     }
-    @media screen and (min-width: 628px) and (max-width: 959px){
+    @include mq(tablet){
         
         font-style: normal;
         font-weight: 300;
@@ -98,8 +143,8 @@
         color: var(--exp);
         margin-bottom: 26px;
     }
-    @media screen and (min-width: 960px) and (max-width: 1439px){
-        max-width: 307px;
+    @include mq(default){
+        // max-width: 307px;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -107,8 +152,8 @@
         color: var(--exp);
         margin-bottom: 26px;
     } 
-    @media screen and (min-width: 1440px){
-        max-width: 307px;
+    @include mq(desktop){
+        // max-width: 307px;
         font-style: normal;
         font-weight: 300;
         font-size: 14px;
@@ -116,64 +161,20 @@
         color: var(--exp);
         margin-bottom: 26px;
     } 
-}
-
-
-.block-text{
-    @media screen and(min-width: 375px) and (max-width: 627px){
-        margin: 0 auto;
-        width: 340px;
-    }
-    @media screen and (min-width: 628px) and (max-width: 959px){
-        width: 390px;
-    }
-    @media screen and (min-width: 960px) and (max-width: 1439px){
-        width: 390px;
-    }
-    @media screen and (min-width: 1440px){
-        width: 390px;
-    }
-    
-}
-
-.block-img{
-    @media screen and (min-width: 375px) and (max-width: 627px){
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        width:  345px;
-        height: 281px;
-        
-    }
-    @media screen and (min-width: 628px) and (max-width: 959px){
-        position: relative;
-        width:  677px;
-        height: 550px;
-    }    
-    @media screen and (min-width: 960px) and (max-width: 1439px){
-        position: relative;
-        width:  677px;
-        height: 550px;
-    }    
-    @media screen and (min-width: 1440px){
-        position: relative;
-        width:  677px;
-        height: 550px;
-    }    
 }
 
 
 .name-project{
-    @media screen and (min-width: 375px) and (max-width: 627px){
+    @include mq(mobile){
         font-size: 12px;
     }
-    @media screen and (min-width: 628px) and (max-width: 959px){
-        font-size: 20px;
+    @include mq(tablet){
+        font-size: 18px;
     }
-    @media screen and (min-width: 960px) and (max-width: 1439px){
-        font-size: 20px;
+    @include mq(default){
+        font-size: 18px;
     }
-    @media screen and (min-width: 1440px){
+    @include mq(desktop){
         font-size: 20px;
     }
     font-style: normal;
@@ -184,17 +185,17 @@
     margin-bottom: 13px;
 }
 .desc-work{
-    @media screen and (min-width: 375px) and (max-width: 627px){
+    @include mq(mobile){
         font-size: 21px;
     }
-    @media screen and (min-width: 628px) and (max-width: 959px){
+    @include mq(tablet){
         font-size: 30px;
     }
-    @media screen and (min-width: 960px) and (max-width: 1439px){
+    @include mq(default){
         font-size: 30px;
     }
-    @media screen and (min-width: 1440px){
-        font-size: 30px;
+    @include mq(desktop){
+        font-size: 36px;
     }
     font-style: normal;
     font-weight: 700;
@@ -205,10 +206,16 @@
 
 
 .view{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         font-size: 12px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        font-size: 14px;
+    }
+    @include mq(default){
+        font-size: 14px;
+    }
+    @include mq(desktop){
         font-size: 16px;
     }
     position: relative;
@@ -238,23 +245,40 @@
 //. JobGet .//
 
 .video_call{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
         left: 42px;
         top: 42px;
         z-index: 1; 
         width: 23px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
         position: absolute;
-        margin-left: 21px;
-        margin-top: 61px;
+        left: 42px;
+        top: 42px;
         z-index: 1; 
+        width: 23px;
+    }
+ 
+    @include mq(default){
+        position: absolute;
+        left: 51px;
+        top: 96px;
+        z-index: 1; 
+        width: 32px;
+    }   
+    @include mq(desktop){
+        position: absolute;
+        left: 21px;
+        top: 61px;
+        z-index: 1; 
+        width: 51px;
     }   
 }
 
+
 .desktop{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
         left:  57px;
         top:  19px;
@@ -262,265 +286,504 @@
         width: 240px;
         
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+        left:  57px;
+        top:  19px;
+        z-index: 0;
+        width: 240px;
+        
+    }
+    @include mq(default){
+        position: absolute;
+    left: 73px;
+    top:   57px;
+    z-index: 0;
+    width: 335px;
+    }   
+    @include mq(desktop){
         position: absolute;
     left: 56px;
     top:   0px;
     z-index: 0;
+    width: 523px;
     }   
 }
 
 
 .calendar_paint{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
         left: 281px;
         top: 93px;
         width: 29px;
         z-index: 1;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+        left: 281px;
+        top: 93px;
+        width: 29px;
+        z-index: 1;
+    }
+    @include mq(default){
+        position: absolute;
+        left: 388px;
+        top: 164px;
+        z-index: 1;
+        width: 40px;
+    } 
+    @include mq(desktop){
         position: absolute;
         left: 547px;
         top: 167px;
         z-index: 1;
+        width: 63px;
     } 
 }
 
 .mobile_one{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
         left: 32px;
         top: 103px;
         z-index: 1; 
         width: 66px;
-
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+        left: 32px;
+        top: 103px;
+        z-index: 1; 
+        width: 66px;
+    }
+
+    @include mq(default){
+        position: absolute;
+        left: 35px;
+        top: 179px;
+        z-index: 1; 
+        width: 92px;
+    } 
+    @include mq(desktop){
         position: absolute;
         left: 0px;
         top: 90px;
-        z-index: 1; 
-    } 
-    
+        z-index: 1;
+        width: 144px; 
+    }   
 }
 
 .mobile_two{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
         left: 105px;
         top: 122px;
         z-index: 1;
         width: 66px;
     }
-    @media screen and (min-width: 577px){ 
+    @include mq(tablet){
+        position: absolute;
+        left: 105px;
+        top: 122px;
+        z-index: 1;
+        width: 66px;
+    }
+    @include mq(default){ 
+        position: absolute;
+        left: 139px;
+        top: 211px;
+        z-index: 1; 
+        width: 92px;  
+    }   
+    @include mq(desktop){ 
         position: absolute;
         left: 160px;
         top: 240px;
-        z-index: 1;   
+        z-index: 1;
+        width: 144px;   
     }   
 }
 
 
 .calendar{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
     left: 161px;
     top: 167px;
     z-index: 1;
     width: 16px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+    left: 161px;
+    top: 167px;
+    z-index: 1;
+    width: 16px;
+    }
+    @include mq(default){
+        position: absolute;
+        left: 208px;
+        top: 274px;
+        z-index: 1; 
+        width: 27px;
+    } 
+    @include mq(desktop){
         position: absolute;
         left: 275px;
         top: 338px;
         z-index: 1; 
-    } 
-    
+        width: 43px;
+    }  
 }
 
 .text{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
     position: absolute;
     left: 178px;
     top: 167px;
     z-index: 1; 
     width: 109px;
     }
-    @media screen and (min-width: 577px){
+
+    @include mq(tablet){
+    position: absolute;
+    left: 178px;
+    top: 167px;
+    z-index: 1; 
+    width: 109px;
+    }
+
+    @include mq(default){
+       position: absolute;
+    left: 239px;
+    top: 274px;
+    z-index: 1; 
+    width: 195px;
+    }    
+    @include mq(desktop){
        position: absolute;
     left: 323px;
     top: 338px;
     z-index: 1; 
-    } 
-    
+    width: 304px;
+    }    
 }
 
 //.Aroma.//
 
 .approw{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
         left: 82px;
         top: 56px;
         z-index: 1;
         width: 140px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+        left: 82px;
+        top: 56px;
+        z-index: 1;
+        width: 140px;
+    }
+    @include mq(default){
+        position: absolute;
+        left: 107px;
+        top: 114px;
+        z-index: 1;
+        width: 174px;
+    } 
+    @include mq(desktop){
         position: absolute;
         left: 124px;
         top: 80px;
         z-index: 1;
+        width: 288px;
     } 
 }
 
 
 .aroma_mobile{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
         left: 100px;
         top: 17px;
         z-index: 0;
         width: 77px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+        left: 100px;
+        top: 17px;
+        z-index: 0;
+        width: 77px;
+    }
+    @include mq(default){
+        position: absolute;
+        left: 130px;
+        top: 75px;
+        z-index: 0;
+        width: 96px;
+    } 
+    @include mq(desktop){
         position: absolute;
         left: 163px;
         top: 15px;
         z-index: 0;
+        width: 160px;
     } 
-    filter: drop-shadow(0px 4px 10px rgba(18, 169, 251, 0.546));
-    
+    filter: drop-shadow(0px 4px 10px rgba(18, 169, 251, 0.546));  
 }
+
+
 .aroma_mobile_two{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
     left: 185px;
     top: 96px;
     z-index: 0;
     width: 77px;
-    
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
         position: absolute;
-    margin-left: 343px;
-    margin-top: 175px;
+    left: 185px;
+    top: 96px;
     z-index: 0;
+    width: 77px;
+    }
+    @include mq(default){
+        position: absolute;
+    left: 239px;
+    top: 171px;
+    z-index: 0;
+    width: 96px;
+    } 
+    @include mq(desktop){
+        position: absolute;
+    left: 343px;
+    top: 175px;
+    z-index: 0;
+    width: 160px;
     } 
     filter: drop-shadow(0px 4px 10px rgba(18, 169, 251, 0.546));
 }
 .recipe{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
     left: 126px;
     top: 190px;
     z-index: 1;
     width: 67px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+    left: 126px;
+    top: 190px;
+    z-index: 1;
+    width: 67px;
+    }
+    @include mq(default){
+        position: absolute;
+    left: 165px;
+    top: 288px;
+    z-index: 1;
+    width: 84px;
+    } 
+    @include mq(desktop){
         position: absolute;
     left: 220px;
     top: 368px;
     z-index: 1;
+    width: 140px;
     } 
 }
 
 //. Airlog .//
 
 .desktop_airlog{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
     left: 40px;
     top: 19px;
     z-index: 0;
     width: 235px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+    left: 40px;
+    top: 19px;
+    z-index: 0;
+    width: 235px;
+    }
+    @include mq(default) {
+        position: absolute;
+        left: 58px;
+        top: 72px;
+        z-index: 0;
+        width: 314px; 
+    } 
+    @include mq(desktop) {
         position: absolute;
         left: 60px;
         top: 47px;
-        z-index: 0; 
-    } 
-    
+        z-index: 0;
+        width: 456px; 
+    }    
 }
 
 .mobile_airlog{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
     left: 244px;
     top: 86px;
     z-index: 1;
     width: 83px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+    left: 244px;
+    top: 86px;
+    z-index: 1;
+    width: 83px;
+    }
+    @include mq(default) {
+        position: absolute;
+    left: 325px;
+    top: 165px;
+    z-index: 1;
+    width: 110px;
+    }    
+    @include mq(desktop) {
         position: absolute;
     left: 446px;
     top: 178px;
     z-index: 1;
+    width: 160px;
     }    
 }
 
 .tab_airlog{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
     left: 21px;
     top: 165px;
     z-index: 1;
     width: 202px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+    left: 21px;
+    top: 165px;
+    z-index: 1;
+    width: 202px;
+    }
+    @include mq(default) {
+        position: absolute;
+        left: 33px;
+        top: 256px;
+        z-index: 1;
+        width: 270px; 
+    }  
+    @include mq(desktop) {
         position: absolute;
         left: 23px;
         top: 315px;
-        z-index: 1; 
+        z-index: 1;
+        width: 392px; 
     }  
 }
 
 .popup_airlog{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
     left: 229px;
     top: 52px;
     z-index: 1;
     width: 55px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+    left: 229px;
+    top: 52px;
+    z-index: 1;
+    width: 55px;
+    }
+    @include mq(default) {
+        position: absolute;
+    left: 310px;
+    top: 120px;
+    z-index: 1;
+    width: 83px;
+    } 
+    @include mq(desktop) {
         position: absolute;
     left: 426px;
     top: 103px;
     z-index: 1;
+    width: 120px;
     } 
 }
 
 .cloud_airlog{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
         left: 18px;
         top: 147px;
         z-index: 1;
         width: 30px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+        left: 18px;
+        top: 147px;
+        z-index: 1;
+        width: 30px;
+    }
+    @include mq(default) {
+        position: absolute;
+        left: 29px;
+        top: 245px;
+        z-index: 1;
+        width: 40px;
+    } 
+    @include mq(desktop) {
         position: absolute;
         left: 16px;
         top: 295px;
         z-index: 1;
+        width: 59px;
     } 
 }
 
 .cloud_two_airlog{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: absolute;
     left: 220px;
     top: 217px;
     z-index: 1;
     width: 34px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: absolute;
+    left: 220px;
+    top: 217px;
+    z-index: 1;
+    width: 34px;
+    }
+    @include mq(default) {
+        position: absolute;
+    left: 283px;
+    top: 354px;
+    z-index: 1;
+    width: 57px;
+    }   
+    @include mq(desktop) {
         position: absolute;
     left: 386px;
     top: 457px;
     z-index: 1;
+    width: 83px;
     }   
 }
 
@@ -533,13 +796,25 @@
         z-index: 1;
         width: 236px;
     }
+    @media screen and (max-width: 576px){
+        left: 44px;
+        top: 60px;
+        z-index: 1;
+        width: 236px;
+    }
     @media screen and (min-width: 577px){
         left: 44px;
         top: 106px;
         z-index: 1;
+        width: 236px;
     } 
-    position: absolute;
-    
+    @media screen and (min-width: 577px){
+        left: 44px;
+        top: 106px;
+        z-index: 1;
+        width: 236px;
+    } 
+    position: absolute; 
 }
 
 .popup_membersy{
@@ -549,6 +824,17 @@
     z-index: 1;
     width: 55px;
     }
+    @media screen and (max-width: 576px){
+        left: 253px;
+    top: 127px;
+    z-index: 1;
+    width: 55px;
+    }
+    @media screen and (min-width: 577px){
+        left: 495px;
+    top: 262px;
+    z-index: 1;
+    } 
     @media screen and (min-width: 577px){
         left: 495px;
     top: 262px;
@@ -567,6 +853,21 @@
     transform: matrix(-1, 0, 0, 1, 0, 0);
     width: 165px;
     }
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 35px;
+    top: 43px;
+    z-index: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 165px;
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 13px;
+    top: 60px;
+    z-index: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    } 
     @media screen and (min-width: 577px){
         position: absolute;
     left: 13px;
@@ -586,6 +887,21 @@
     transform: matrix(-1, 0, 0, 1, 0, 0);
     width: 31px;
     }
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 261px;
+    top: 205px;
+    z-index: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 31px;
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+    left: 520px;
+    top: 430px;
+    z-index: 0;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    } 
     @media screen and (min-width: 577px){
         position: absolute;
     left: 520px;
@@ -607,6 +923,19 @@
         z-index: 0;
         width: 196px;
     }
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 75px;
+        top: 41px;
+        z-index: 0;
+        width: 196px;
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 82px;
+        top: 60px;
+        z-index: 0;
+    } 
     @media screen and (min-width: 577px){
         position: absolute;
         left: 82px;
@@ -623,6 +952,19 @@
     z-index: 1;
     width: 154px;
     }
+    @media screen and (max-width: 576px){
+        position: absolute;
+    left: 53px;
+    top: 142px;
+    z-index: 1;
+    width: 154px;
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 38px;
+        top: 265px;
+        z-index: 1; 
+    } 
     @media screen and (min-width: 577px){
         position: absolute;
         left: 38px;
@@ -640,6 +982,19 @@
         z-index: 0;
         width: 90px;
     }
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 226px;
+        top: 89px;
+        z-index: 0;
+        width: 90px;
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 401px;
+        top: 172px;
+        z-index: 0;
+    } 
     @media screen and (min-width: 577px){
         position: absolute;
         left: 401px;
@@ -656,6 +1011,19 @@
         z-index: 1;
         width: 123px;
     }
+    @media screen and (max-width: 576px){
+        position: absolute;
+        left: 28px;
+        top: 173px;
+        z-index: 1;
+        width: 123px;
+    }
+    @media screen and (min-width: 577px){
+        position: absolute;
+        left: 11px;
+        top: 345px;
+        z-index: 0;
+    } 
     @media screen and (min-width: 577px){
         position: absolute;
         left: 11px;
