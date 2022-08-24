@@ -114,10 +114,10 @@
 
 .exp-ul{
     @include mq(mobile){
-        margin-left: 75px;
+        margin-left: 65px;
     }
     @include mq(tablet){
-        margin-left: 75px;
+        margin-left: 55px;
     }
     @include mq(default){
         margin-left: 170px;
