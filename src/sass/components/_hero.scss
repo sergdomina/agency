@@ -1,5 +1,15 @@
 .hero__title{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
+        width: 292px;
+        margin: 0 auto;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.5;
+        color: var(--rasp);
+        
+    }
+    @include mq(tablet){
         width: 292px;
         margin: 0 auto;
         font-family: Poppins;
@@ -8,51 +18,44 @@
         line-height: 1.5;
         color: var(--rasp);
     }
-    @media screen and (min-width: 577px){
+    @include mq(default){
+        width: 578px;
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 1.5;
+        color: var(--rasp);
+    }
+    @include mq(desktop){
         width: 826px;
-
         font-family: Poppins;
         font-weight: 600;
         font-size: 60px;
         line-height: 1.5;
         color: var(--rasp);
-    }  
-width: 826px;
-
-font-family: Poppins;
-font-weight: 600;
-font-size: 60px;
-line-height: 1.5;
-color: var(--rasp);
+    }
 }
+
+
 .hero__container{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
+        padding-bottom: 30px;
+        padding-top: 30px;
+        
+    }
+    @include mq(tablet){
         padding-bottom: 30px;
         padding-top: 30px;
     }
-    @media screen and (min-width: 577px){
-        padding-bottom: 224px;
+    @include mq(default){
+        padding-bottom: 80px;
         padding-top: 71px;
-    }  
-    
-}
-
-
-.hero__description{
-    white-space: nowrap;
-font-weight: 700;
-font-size: calc(30px+(45-30)*((100vw-320px)/(1440-320)));
-line-height: 1.36;
-&:not(:last-child){
-    margin-right: 20px;
-}
-
--webkit-text-stroke: 1px #fff;
-color: transparent;
-}
-.discription__item{
-    display: flex;
-    &:not(:last-child){
-        margin-bottom: 20px;
     }
+    @include mq(desktop){
+        padding-bottom: 100px;
+        padding-top: 71px;
+    } 
 }
+
+
+

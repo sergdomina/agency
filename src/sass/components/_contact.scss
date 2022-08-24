@@ -21,7 +21,7 @@
 
 
 .action{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         font-style: normal;
         font-weight: 900;
         font-size: 25px;
@@ -31,21 +31,41 @@
         color: transparent;
         -webkit-text-stroke: 1px var(--most-light);
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+        line-height: 49px;
+        color: transparent;
+        -webkit-text-stroke: 1px var(--most-light);
+    }
+    @include mq(default){
+        font-style: normal;
+        font-weight: 900;
+        font-size: 27px;
+        margin-bottom: 45px;
+        margin-left: 80px;
+        line-height: 49px;
+        color: transparent;
+        -webkit-text-stroke: 1px var(--most-light);
+    }
+    @include mq(desktop){
         font-style: normal;
         font-weight: 900;
         font-size: 36px;
-        margin-bottom: 45px;
-        margin-left: 180px;
+        margin-bottom: 85px;
+        margin-left: 140px;
         line-height: 49px;
         color: transparent;
-        -webkit-text-stroke: 2px var(--most-light);
+        -webkit-text-stroke: 1px var(--most-light);
     }
 }
 
 
 .mail{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         display: block;
         font-style: normal;
         font-weight: 800;
@@ -55,11 +75,29 @@
         text-align: center;
         color: var(--most-light);
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        display: block;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 45px ;
+        margin: 0 auto;
+        line-height: 0px;
+        text-align: center;
+        color: var(--most-light);
+    }
+    @include mq(default){
+        font-style: normal;
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 0px;
+        text-align: center;
+        color: var(--most-light);
+    }    
+    @include mq(desktop){
         font-style: normal;
         font-weight: 800;
         font-size: 72px;
-        margin-left: 245px;
+        margin-bottom: 85px;
         line-height: 0px;
         text-align: center;
         color: var(--most-light);

@@ -1,59 +1,136 @@
+
+
+
+.discription__container{
+    @include mq(mobile){
+        width: 375px;
+        overflow: hidden;
+        padding-top: 0px;
+        padding-bottom: 28px;
+    }
+    @include mq(tablet){
+        width: 310px;
+        overflow: hidden;
+        padding-top: 69px;
+        padding-bottom: 28px;
+    }
+    @include mq(default){
+        width: 590px;
+        overflow: hidden;
+        padding-top: 122px;
+        padding-bottom: 28px;
+        background-color: var(--bg);
+        text-align: right;
+    }
+    @include mq(desktop){
+        width: 900px;
+        overflow: hidden;
+        padding-top: 250px;
+        padding-bottom: 28px;
+        background-color: var(--bg);
+        text-align: right;
+    }
+}
+
+.hero__description{
+    @include mq(mobile){
+        font-size: 23px;
+        
+    }
+    @include mq(tablet){
+        font-size: 23px;
+    }
+    @include mq(default){
+        font-size: 35px;
+    }
+    @include mq(desktop){
+        font-size: 50px;
+    }
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 1.36;
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+.discription__item{
+    display: flex;
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+
 .ex-item{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         font-weight: 600;
         font-size: 17px;
         line-height: 1.36;
         color: var(--exp);
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        font-weight: 600;
+        font-size: 17px;
+        line-height: 1.36;
+        color: var(--exp);
+    }
+    @include mq(default){
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 1.36;
+        color: var(--exp);
+    }
+    @include mq(desktop){
         font-weight: 600;
         font-size: 36px;
         line-height: 1.36;
         color: var(--exp);
-    } 
-    
-}
-.discription__container{
-    @media screen and (max-width: 576px){
-        width: 375px;
-        padding-top: 0px;
-        padding-bottom: 28px;
     }
-    @media screen and (min-width: 577px){
-        width: 934px;
-        overflow: hidden;
-        padding-top: 120px;
-        padding-bottom: 28px;
-        background-color: var(--bg);
-        text-align: right;
-    }
-    
 }
 
+
 .exp-ul{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         margin-left: 75px;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        margin-left: 75px;
+    }
+    @include mq(default){
+        margin-left: 170px;
+    }   
+    @include mq(desktop){
         margin-left: 204px;
     }   
 }
 .exp-li{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         &:not(:last-child){
             margin-bottom: 15px;
         }
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        &:not(:last-child){
+            margin-bottom: 15px;
+        }
+    }
+    @include mq(default){
         &:not(:last-child){
             margin-bottom: 45px;
         }
-    } 
+    }   
+    @include mq(desktop){
+        &:not(:last-child){
+            margin-bottom: 45px;
+        }
+    }
 }
 
 
 .exp-title{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         margin-left: -115px;
         margin-top: 150px;
     position: absolute;
@@ -63,7 +140,27 @@
     color: var(--yellow);
     transform: rotate(-90deg);
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        margin-left: -115px;
+        margin-top: 150px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.1;
+    color: var(--yellow);
+    transform: rotate(-90deg);
+    }
+    @include mq(default){
+        margin-left: -187px;
+        margin-top: 220px;
+    position: absolute;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 68px;
+    color: var(--yellow);
+    transform: rotate(-90deg);
+    } 
+    @include mq(desktop){
         margin-left: -187px;
         margin-top: 220px;
     position: absolute;
@@ -80,14 +177,28 @@
     background-color: var(--body-bg);
 }
 .dis{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: relative;
         display: flex;
         padding-left: 30px;
         padding-top: 30px;
         padding-bottom: 36px; 
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: relative;
+        display: flex;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 36px; 
+    }
+    @include mq(default){
+        position: relative;
+        display: flex;
+        padding-left: 56px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }  
+    @include mq(desktop){
         position: relative;
         display: flex;
         padding-left: 56px;
@@ -96,80 +207,136 @@
     }  
 }
 .fixed{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         position: relative;
         float: none;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        position: sticky;
+        top: 260px;
+        float: left;
+        bottom: 0;
+    }
+    @include mq(default){
+        position: sticky;
+        float: left;
+        top: 45%;
+        bottom: 0;
+    }   
+    @include mq(desktop){
         position: sticky;
         float: left;
         top: 55%;
-
         bottom: 0;
     }   
 }
 
+
 .dby{
-    @media screen and (max-width: 576px){
-        max-width: 576px;
+    @include mq(mobile){
+    max-width: 100%;
     display: flex;
     align-items: center;
     margin-bottom: 24px;
     justify-content: center;
     }
-    @media screen and (min-width: 577px){
-        max-width: 506px;
+    @include mq(tablet){
+    width: 296px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: center;
+    }
+    @include mq(default){
+    width: 338px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    justify-content: center;
+    }   
+    @include mq(desktop){
+    width: 506px;
     display: flex;
     align-items: center;
     margin-bottom: 24px;
     justify-content: center;
     }   
 }
+
+
 .behance{
     margin-right: 24px;
     margin-left: 24px;
 }
 .exflex{
 
-
 }
+
+
 .selected{
-    @media screen and (max-width: 576px){
-        display: flex;
+    @include mq(mobile){
+        display: block;
         max-width: 576px;
         height: 98px;
         text-align: center;
         background-color: var(--rasp);
         justify-content: center;
-        align-items: center;
-        position: relative;
+        align-items: center; 
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        display: block;
+        width: 296px;
+        height: 98px;
+        text-align: center;
+        background-color: var(--rasp);
+        justify-content: center;
+        align-items: center;
+    }
+    @include mq(default){
+        display: block;
+        text-align: center;
+        align-items: center;
+    width: 338px;
+    height: 201px;
+    background-color: var(--rasp);
+    }
+    @include mq(desktop){
     width: 506px;
     height: 301px;
     background-color: var(--rasp);
+    align-items: center;
     justify-content: center;
-    position: relative;
     }
 }
 
+
 .select-work{
-    @media screen and (max-width: 576px){
-        position: absolute;
-        top: 40%;
-        margin: 0 auto;
-        font-family: 'Avenir';
+    @include mq(mobile){
+
         font-style: normal;
         font-weight: 800;
         font-size: 17px;
         line-height: 1.3;
         color: var(--most-light);
     }
-    @media screen and (min-width: 577px){
-        position: absolute;
-        top: 45%;
-        left: 30%;
-        font-family: 'Avenir';
+    @include mq(tablet){
+
+
+        font-style: normal;
+        font-weight: 800;
+        font-size: 17px;
+        line-height: 1.3;
+        color: var(--most-light);
+    }
+    @include mq(default){
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 1.3;
+        color: var(--most-light);
+    }
+    @include mq(desktop){
+
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
