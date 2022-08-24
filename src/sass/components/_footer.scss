@@ -58,7 +58,7 @@ color: var(--most-light);
 }
 
 .dev{
-    @media screen and (max-width: 576px){
+    @media screen and (mobile){
         display: block;
         font-style: normal;
         font-weight: 700;
@@ -69,7 +69,25 @@ color: var(--most-light);
         margin-bottom: 14px;
         color: var(--most-light);
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.3;
+        text-align: right;
+        margin-right: 5px;
+        color: var(--most-light);
+    }
+    @include mq(default){
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.3;
+        text-align: right;
+        margin-right: 30px;
+        color: var(--most-light);
+    }
+    @include mq(desktop){
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
@@ -123,11 +141,19 @@ padding: 45px 10px;
 
 
 .right{
-    @media screen and (max-width: 576px){
+    @include mq(mobile){
         display: block;
         text-align: center;
     }
-    @media screen and (min-width: 577px){
+    @include mq(tablet){
+        display: flex;
+        align-items: center;
+    }
+    @include mq(default){
+        display: flex;
+        align-items: baseline;
+    }
+    @include mq(desktop){
         display: flex;
         align-items: baseline;
     }

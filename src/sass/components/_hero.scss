@@ -44,15 +44,15 @@
         
     }
     @include mq(tablet){
-        padding-bottom: 30px;
+        padding-bottom: 80px;
         padding-top: 30px;
     }
     @include mq(default){
-        padding-bottom: 80px;
+        padding-bottom: 190px;
         padding-top: 71px;
     }
     @include mq(desktop){
-        padding-bottom: 100px;
+        padding-bottom: 150px;
         padding-top: 71px;
     } 
 }

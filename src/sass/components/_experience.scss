@@ -3,21 +3,21 @@
 
 .discription__container{
     @include mq(mobile){
-        width: 375px;
+        width: 335px;
         overflow: hidden;
         padding-top: 0px;
         padding-bottom: 28px;
     }
     @include mq(tablet){
-        width: 310px;
+        width: 320px;
         overflow: hidden;
-        padding-top: 69px;
+        padding-top: 60px;
         padding-bottom: 28px;
     }
     @include mq(default){
         width: 590px;
         overflow: hidden;
-        padding-top: 122px;
+        padding-top: 110px;
         padding-bottom: 28px;
         background-color: var(--bg);
         text-align: right;
@@ -38,7 +38,8 @@
         
     }
     @include mq(tablet){
-        font-size: 23px;
+        font-size: 18px;
+        -webkit-text-stroke: 0.4px #fff;
     }
     @include mq(default){
         font-size: 35px;
@@ -57,9 +58,29 @@
 }
 
 .discription__item{
-    display: flex;
+    @include mq(mobile){
+        display: flex;
     &:not(:last-child){
         margin-bottom: 20px;
+    }
+    }
+    @include mq(tablet){
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 7px;
+        }
+    }
+    @include mq(default){
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    @include mq(desktop){
+        display: flex;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -237,21 +258,21 @@
     max-width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     justify-content: center;
     }
     @include mq(tablet){
     width: 296px;
     display: flex;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     justify-content: center;
     }
     @include mq(default){
     width: 338px;
     display: flex;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     justify-content: center;
     }   
     @include mq(desktop){
@@ -264,10 +285,60 @@
 }
 
 
-.behance{
-    margin-right: 24px;
-    margin-left: 24px;
+.dribbble{
+    @include mq(mobile){
+        width: 39px;
+    }
+    @include mq(tablet){
+       width: 39px;
+    }
+    @include mq(default){
+        width: 41px;
+    }   
+    @include mq(desktop){
+        width: 62px;
+    }   
 }
+
+.behance{
+    @include mq(mobile){
+        width: 39px;
+        margin-right: 24px;
+        margin-left: 24px; 
+    }
+    @include mq(tablet){
+        width: 39px;
+        margin-right: 24px;
+        margin-left: 24px; 
+    }
+    @include mq(default){
+        width: 41px;
+        margin-right: 24px;
+        margin-left: 24px; 
+    }   
+    @include mq(desktop){
+        width: 62px;
+        margin-right: 24px;
+        margin-left: 24px; 
+    }   
+}
+
+.youtube{
+    @include mq(mobile){
+        width: 39px;
+    }
+    @include mq(tablet){
+        width: 39px;
+    }
+    @include mq(default){
+        width: 41px;
+    }   
+    @include mq(desktop){
+        width: 62px;
+    } 
+}
+
+
 .exflex{
 
 }

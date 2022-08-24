@@ -1,13 +1,35 @@
-.logo{
+.Logo{
+    @include mq(mobile){
+        width: 230px;
+    }
+    @include mq(tablet){
+        width: 230px;
+    }
+    @include mq(default){
+        width: 257px;
+    }  
+    @include mq(desktop){
+        width: 357px;
+    } 
     background-color: var(--body-bg);
-    padding: 55px 27px 42px 28px;
     display: inline-block;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
     color: var(--logo-white);
 }
 .logo__container{
-    padding-left: 58px;
+    @include mq(mobile){
+        padding: 30px 17px 32px 18px;
+        margin-left: 30px;
+    }
+    @include mq(tablet){
+        padding: 40px 17px 32px 18px;
+        margin-left: 40px;
+    }
+    @include mq(default){
+        padding: 55px 27px 42px 28px;
+        margin-left: 50px;
+    }  
+    @include mq(desktop){
+        padding: 55px 27px 42px 28px;
+        margin-left: 70px;
+    } 
 }
