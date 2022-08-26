@@ -15,17 +15,17 @@
         padding-bottom: 28px;
     }
     @include mq(default){
-        width: 590px;
+        width: 580px;
         overflow: hidden;
-        padding-top: 110px;
+        padding-top: 73px;
         padding-bottom: 28px;
         background-color: var(--bg);
         text-align: right;
     }
     @include mq(desktop){
-        width: 900px;
+        width: 875px;
         overflow: hidden;
-        padding-top: 250px;
+        padding-top: 192px;
         padding-bottom: 28px;
         background-color: var(--bg);
         text-align: right;
@@ -346,25 +346,25 @@
 
 .selected{
     @include mq(mobile){
-        display: block;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         max-width: 576px;
         height: 98px;
-        text-align: center;
         background-color: var(--rasp);
-        justify-content: center;
-        align-items: center; 
+
     }
     @include mq(tablet){
-        display: block;
+        display: flex;
+        text-align: center;
+        align-items: center;
         width: 296px;
         height: 98px;
-        text-align: center;
         background-color: var(--rasp);
-        justify-content: center;
-        align-items: center;
     }
     @include mq(default){
-        display: block;
+        display: flex;
         text-align: center;
         align-items: center;
     width: 338px;
@@ -372,11 +372,12 @@
     background-color: var(--rasp);
     }
     @include mq(desktop){
+        display: flex;
+        text-align: center;
+        align-items: center;
     width: 506px;
     height: 301px;
     background-color: var(--rasp);
-    align-items: center;
-    justify-content: center;
     }
 }
 
