@@ -1,6 +1,6 @@
 .hero__title{
     @include mq(mobile){
-        width: 292px;
+        width: 100%;
         margin: 0 auto;
         font-family: Poppins;
         font-weight: 600;
@@ -10,7 +10,7 @@
         
     }
     @include mq(tablet){
-        width: 292px;
+        width: 100%;
         margin: 0 auto;
         font-family: Poppins;
         font-weight: 600;
@@ -19,7 +19,7 @@
         color: var(--rasp);
     }
     @include mq(default){
-        width: 578px;
+        width: 100%;
         font-family: Poppins;
         font-weight: 600;
         font-size: 45px;
@@ -27,7 +27,7 @@
         color: var(--rasp);
     }
     @include mq(desktop){
-        width: 826px;
+        width: 100%;
         font-family: Poppins;
         font-weight: 600;
         font-size: 60px;
