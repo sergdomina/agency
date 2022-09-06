@@ -6,7 +6,6 @@
         font-weight: 600;
         font-size: 30px;
         line-height: 1.5;
-        color: var(--rasp);
         
     }
     @include mq(tablet){
@@ -16,7 +15,7 @@
         font-weight: 600;
         font-size: 30px;
         line-height: 1.5;
-        color: var(--rasp);
+    
     }
     @include mq(default){
         width: 100%;
@@ -24,7 +23,7 @@
         font-weight: 600;
         font-size: 45px;
         line-height: 1.5;
-        color: var(--rasp);
+      
     }
     @include mq(desktop){
         width: 100%;
@@ -32,8 +31,25 @@
         font-weight: 600;
         font-size: 60px;
         line-height: 1.5;
-        color: var(--rasp);
+        
     }
+    -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        background-size: 300% 300%;
+        background-image: linear-gradient(-45deg, #ff8725, #ff11cb, #23a6d5, #23d5ab);
+        animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
