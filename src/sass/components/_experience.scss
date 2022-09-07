@@ -53,9 +53,33 @@
     &:not(:last-child){
         margin-right: 20px;
     }
-    -webkit-text-stroke: 1px #fff;
+  stroke-width: 1.5px;
+  user-select: none;
+  animation: strokeAnimation 2s linear infinite;
+  animation-direction: alternate;
+    // -webkit-text-stroke: 1px #fff;
     color: transparent;
 }
+
+@keyframes strokeAnimation {
+    0% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 0 50%;
+      fill: transparent;
+    } 
+    40% {
+      stroke-dashoffset: 155;
+    }
+    70% {
+      stroke-dashoffset: 260;
+      stroke-dasharray: 70% 0;
+      fill: transparent;
+    }
+    100% {
+      stroke-dashoffset: 520;
+
+    }
+  }
 
 .discription__item{
     @include mq(mobile){
@@ -370,7 +394,7 @@
         display: flex;
         text-align: center;
         align-items: center;
-    width: 501px;
+    width: 506px;
     height: 301px;
     background-color: var(--rasp);
     }
