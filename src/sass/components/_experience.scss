@@ -3,8 +3,9 @@
 
 .discription__container{
     @include mq(mobile){
-        width: 335px;
-        overflow: hidden;
+        display: none;
+        max-width: 627px;
+        
         padding-top: 0px;
         padding-bottom: 28px;
     }
@@ -32,10 +33,46 @@
     }
 }
 
+.mobile__description{
+    @include mq(mobile){
+        display: block;
+        max-width: 627px;
+        font-size: 23px;
+        -webkit-text-stroke: 0.4px #fff;
+    }
+    @include mq(tablet){
+        // display: none;
+        font-size: 18px;
+        -webkit-text-stroke: 0.4px #fff;
+    }
+    @include mq(default){
+        // display: none;
+        font-size: 35px;
+    }
+    @include mq(desktop){
+        // display: none;
+        font-size: 50px;
+    }
+    white-space: nowrap;
+    font-weight: 700;
+    line-height: 1.36;
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+    stroke-width: 1.5px;
+    user-select: none;
+    animation: strokeAnimation 2s linear infinite;
+    animation-direction: alternate;
+    // -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+
 .hero__description{
     @include mq(mobile){
+        // display: none;
         font-size: 23px;
-        
+        -webkit-text-stroke: 0.4px #fff;
     }
     @include mq(tablet){
         font-size: 18px;
@@ -53,10 +90,11 @@
     &:not(:last-child){
         margin-right: 20px;
     }
-  stroke-width: 1.5px;
-  user-select: none;
-  animation: strokeAnimation 2s linear infinite;
-  animation-direction: alternate;
+    -webkit-text-stroke: 0.4px #fff;
+    stroke-width: 1.5px;
+    user-select: none;
+    animation: strokeAnimation 2s linear infinite;
+    animation-direction: alternate;
     // -webkit-text-stroke: 1px #fff;
     color: transparent;
 }
