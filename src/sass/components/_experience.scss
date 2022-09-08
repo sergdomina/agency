@@ -41,16 +41,16 @@
         -webkit-text-stroke: 0.4px #fff;
     }
     @include mq(tablet){
-        // display: none;
+        display: none;
         font-size: 18px;
         -webkit-text-stroke: 0.4px #fff;
     }
     @include mq(default){
-        // display: none;
+        display: none;
         font-size: 35px;
     }
     @include mq(desktop){
-        // display: none;
+        display: none;
         font-size: 50px;
     }
     white-space: nowrap;
@@ -63,25 +63,28 @@
     user-select: none;
     animation: strokeAnimation 2s linear infinite;
     animation-direction: alternate;
-    // -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
     color: transparent;
 }
 
 
 .hero__description{
     @include mq(mobile){
-        // display: none;
+        display: none;
         font-size: 23px;
         -webkit-text-stroke: 0.4px #fff;
     }
     @include mq(tablet){
+        display: block;
         font-size: 18px;
         -webkit-text-stroke: 0.4px #fff;
     }
     @include mq(default){
+        display: block;
         font-size: 35px;
     }
     @include mq(desktop){
+        display: block;
         font-size: 50px;
     }
     white-space: nowrap;
@@ -90,12 +93,11 @@
     &:not(:last-child){
         margin-right: 20px;
     }
-    -webkit-text-stroke: 0.4px #fff;
     stroke-width: 1.5px;
     user-select: none;
     animation: strokeAnimation 2s linear infinite;
     animation-direction: alternate;
-    // -webkit-text-stroke: 1px #fff;
+    -webkit-text-stroke: 1px #fff;
     color: transparent;
 }
 
