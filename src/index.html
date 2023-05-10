@@ -19,7 +19,9 @@
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
-    <include src="./partials/hero.html"></include>
+    <include src="./partials/hero.html">
+      <iframe src='https://my.spline.design/colorbox3copy-dc6cb5924463276495e2151743f8d584/' frameborder='0' width='100%' height='100%'></iframe>
+    </include>
     <include src="./partials/experience.html"></include>
     <include src="./partials/work.html"></include>
     <include src="./partials/contact.html"></include>
@@ -27,8 +29,10 @@
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
     <script src="./js/smooth-scroll.js"></script>
+    <canvas ></canvas>
+    
   </body>
   
-  <canvas id="bg"></canvas>
+  
   
 </html>
