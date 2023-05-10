@@ -6,7 +6,8 @@
   "homepage": "https://sergdomina.github.io/agency",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /agency/"
+    "build": "parcel build src/*.html --public-url /agency/",
+    "build-local": "parcel build ./src/index.html --out-dir ./dist"
   },
   "repository": {
     "type": "git",
@@ -24,9 +25,5 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
-  },
-  "dependencies": {
-    "@splinetool/loader": "^0.9.200",
-    "three": "^0.149.0"
   }
 }
